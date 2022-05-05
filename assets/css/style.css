@@ -126,7 +126,7 @@ li:last-child a:hover {
 .columns {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 .columns.cards {
@@ -155,7 +155,7 @@ li:last-child a:hover {
 /* title  */
 .title.is-large {
     padding: 0.2em 0 1em;
-    color: #ec4067;
+    color: #FA964D;
     font-size: 1.9em;
     font-weight: 700;
     width: 100%;
@@ -166,16 +166,84 @@ li:last-child a:hover {
 .pd-0{
     padding-bottom: 0 !important;
 }
+.pr-0{
+    padding-right: 0 !important
+}
+.pl-0{
+    padding-left: 0 !important
+}
 
 /* images */
 .image.is-large {
-    height: 16em;
-    width: 16em;
-    position: relative;
+    height: 20em;
+    width: 20em;
 }
 
-.image.is-large img,.image.is-normal img {
-    position: absolute;
+.image.is-large img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+/* not working  */
+.profile{
+    position: relative;
+    width: 20em;
+    height: 20em;
+    overflow: visible;
+}
+
+.image.is-large .profileImg{
+    width: 17em;
+    height: 20em;
+    position: absolute;
+    top: 0;
+    background: none;
+    z-index: 1;
+}
+
+.profile .bigCircle{
+    width: 15em; 
+    height: 15em;   
+    background: #a989e5;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.9em;
+    left: -2.4em;
+    overflow: visible;
+}
+
+
+.profile .smallCircle{
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    background: #eb95aa;
+    position: absolute;
+    bottom: 3em;
+    right: 0;
+    overflow: visible;
+}
+/* .profile .smallCircle .twitter{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background: red;
+} */
+.profile .smallCircle .twitter img{    
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 1em;
+    right: -5%;
+
+}
+.profile .bigCircle .google img{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 4em;
+    left: -5%;
 }
