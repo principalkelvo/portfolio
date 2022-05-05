@@ -19,7 +19,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-
     min-height: 3.25rem;
 }
 
@@ -96,11 +95,11 @@ li:last-child a:hover {
 .buttons button:focus, 
 .buttons button:active {
     box-shadow: inset 205px 0px 0 0 #fff;
-    border: 1px solid #FAAA53;
-    color: #FAAA53 !important;
+    border: 1px solid #000;
+    color: #000 !important;
 }
 
-
+/* button no-fill */
 .buttons button.no-fill {
     color: #000;
     background: #fff;
@@ -116,12 +115,14 @@ li:last-child a:hover {
     border: 1.45px solid #FAAA53;
 }
 
+/* section  */
 .section {
-    padding: 3rem 2rem;
+    padding: 1em 1em;
     min-height: calc(100vh - 3.25rem);
     width: 100vw;
 }
 
+/* columns  */
 .columns {
     display: flex;
     align-items: center;
@@ -149,4 +150,32 @@ li:last-child a:hover {
 .column.is-8 {
     width: 66.6%;
     padding: 3em;
+}
+
+/* title  */
+.title.is-large {
+    padding: 0.2em 0 1em;
+    color: #ec4067;
+    font-size: 1.9em;
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/* padding  */
+.pd-0{
+    padding-bottom: 0 !important;
+}
+
+/* images */
+.image.is-large {
+    height: 16em;
+    width: 16em;
+    position: relative;
+}
+
+.image.is-large img,.image.is-normal img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
