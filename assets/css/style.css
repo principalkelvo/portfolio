@@ -247,3 +247,12 @@ li:last-child a:hover {
     top: 4em;
     left: -5%;
 }
+.profile .facebook img{    
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 1em;
+    right: 10%;
+
+}
